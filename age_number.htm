@@ -1,0 +1,23 @@
+<html>
+	<body>
+	<p>input your age and click the button<p>
+	<input id="age" value="18"/>
+	<button onclick="myfunction()">try it</button>
+	<p id="demo"></p>
+	<script>
+		function myfunction(){
+		var age,votable;
+		age=Number(document.getElementById("age").value);
+			if(isNaN(age)){
+				votable="error in input";
+			}else{
+				votable=(age<18)?"too young":"old enough";
+			}
+			document.getElementById("demo").innerHTML=votable;
+		}
+	</script>
+	</body>
+</html>
+<!--js work on 32-bit number
+	we can use default inn the mid in case of switch...but remember to end it wid break
+-->
